@@ -9,6 +9,13 @@ body {
 img {
   max-width: 100%;
 }
+ul,
+ol,
+li,
+i {
+  padding: 0;
+  margin: 0;
+}
 .logo-img {
   width: 150px;
 }
@@ -30,7 +37,7 @@ img {
   position: relative;
 }
 
-.time-box h1:nth-child(1)::before {
+.time-box h1::before {
   content: "";
   position: absolute;
   top: 0;
@@ -45,7 +52,7 @@ img {
   position: relative;
 }
 
-.time-box1 h1:nth-child(1)::before {
+.time-box1 h1::before {
   content: "";
   position: absolute;
   top: 0;
@@ -60,7 +67,7 @@ img {
   position: relative;
 }
 
-.time-box2 h1:nth-child(1)::before {
+.time-box2 h1::before {
   content: "";
   position: absolute;
   top: 0;
@@ -71,13 +78,48 @@ img {
   border-right: 2px dotted #121212;
   margin: auto;
 }
+
 .team {
   background-image: url(../images/banner1.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.493);
+}
+.team-member {
+  width: 80%;
+  margin: auto;
 }
 
+.icon i {
+  font-size: 16px;
+  padding: 6px;
+  margin: 0 2px;
+}
+.why1 {
+  position: relative;
+}
+.why1 h3::before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100px;
+  height: 1px;
+  border-bottom: 1px solid #121212cc;
+}
+.why2 {
+  position: relative;
+}
+.why2 h3::before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  right: 0;
+  width: 100px;
+  height: 1px;
+  border-bottom: 1px solid #121212cc;
+}
 /* .carousel-item img {
   position: relative;
 }

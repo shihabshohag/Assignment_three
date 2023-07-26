@@ -6,3 +6,46 @@
 body {
   font-family: "Lato", sans-serif;
 }
+img {
+  max-width: 100%;
+}
+.logo-img {
+  width: 150px;
+}
+
+.banner-slider {
+  position: relative;
+}
+.banner-slider1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #00000071;
+  z-index: 9;
+}
+
+/* .carousel-item img {
+  position: relative;
+}
+.carousel-item img::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: 99;
+} */
+
+@media screen and (max-width: 1023px) {
+  .desttop-nav {
+    display: none;
+  }
+}
+@media screen and (max-width: 576px) {
+  .banner-slider {
+    height: 300px !important;
+  }
+}

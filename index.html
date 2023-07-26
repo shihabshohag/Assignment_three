@@ -261,8 +261,16 @@
             <div
               class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 z-50"
             >
-              <a href="#slide1" class="btn btn-circle">❮</a>
-              <a href="#slide3" class="btn btn-circle">❯</a>
+              <a
+                href="#slide1"
+                class="btn btn-circle bg-[#121212] border-none text-white hover:text-black"
+                >❮</a
+              >
+              <a
+                href="#slide3"
+                class="btn btn-circle bg-[#121212] border-none text-white hover:text-black"
+                >❯</a
+              >
             </div>
           </div>
           <div id="slide3" class="carousel-item relative w-full banner-slider">
@@ -289,8 +297,16 @@
             <div
               class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 z-50"
             >
-              <a href="#slide2" class="btn btn-circle">❮</a>
-              <a href="#slide4" class="btn btn-circle">❯</a>
+              <a
+                href="#slide2"
+                class="btn btn-circle bg-[#121212] border-none text-white hover:text-black"
+                >❮</a
+              >
+              <a
+                href="#slide4"
+                class="btn btn-circle bg-[#121212] border-none text-white hover:text-black"
+                >❯</a
+              >
             </div>
           </div>
           <div id="slide4" class="carousel-item relative w-full banner-slider">
@@ -317,8 +333,16 @@
             <div
               class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 z-50"
             >
-              <a href="#slide3" class="btn btn-circle">❮</a>
-              <a href="#slide1" class="btn btn-circle">❯</a>
+              <a
+                href="#slide3"
+                class="btn btn-circle bg-[#121212] border-none text-white hover:text-black"
+                >❮</a
+              >
+              <a
+                href="#slide1"
+                class="btn btn-circle bg-[#121212] border-none text-white hover:text-black"
+                >❯</a
+              >
             </div>
           </div>
         </div>
@@ -327,9 +351,10 @@
 
     <!-- main start -->
     <main>
+      <!-- catagory section -->
       <section class="catagory max-w-screen-xl m-auto hidden lg:block relative">
         <div
-          class="catagory-main grid grid-cols-5 justify-center mx-40 absolute -top-32 left-0 right-0 m-auto z-50 bg-white p-10 shadow-md"
+          class="catagory-main grid grid-cols-5 justify-center mx-40 absolute -top-32 left-0 right-0 m-auto z-50 bg-white p-10 shadow-xl"
         >
           <div class="catagory-box">
             <img class="m-auto" src="./images/fruit1.png" alt="" />
@@ -354,6 +379,292 @@
           <div class="catagory-box">
             <img class="m-auto" src="./images/fruit5.png" alt="" />
             <h3 class="text-center text-[#121212] font-medium mt-4">Mango</h3>
+          </div>
+        </div>
+      </section>
+
+      <!-- product section -->
+      <!-- product header content -->
+      <section class="pt-10 lg:pt-52 max-w-screen-xl m-auto">
+        <div
+          class="grid grid-cols-1 lg:grid-cols-2 justify-center lg:justify-between"
+        >
+          <div class="px-4 lg:px-0">
+            <h1
+              class="text-black font-extrabold text-5xl mb-6 text-center lg:text-left"
+            >
+              Deal of the day
+            </h1>
+            <p
+              class="text-[#121212] text-md text-center lg:text-left lg:pr-24 mb-10"
+            >
+              Contrary to popular belief, is not simply random text. It has
+              roots in a piece of classical Latin literature from 45 BC, making
+              it over 2000 years old.
+            </p>
+          </div>
+          <div class="flex justify-center lg:justify-end">
+            <div class="time-box">
+              <h1 class="text-black text-5xl font-extrabold px-5">29</h1>
+              <p class="text-[#121212] text-md font-medium mt-3 text-center">
+                Days
+              </p>
+            </div>
+            <div class="time-box1">
+              <h1 class="text-black text-5xl font-extrabold px-5">15</h1>
+              <p class="text-[#121212] text-md font-medium mt-3 text-center">
+                Hours
+              </p>
+            </div>
+            <div class="time-box2">
+              <h1 class="text-black text-5xl font-extrabold px-5">25</h1>
+              <p class="text-[#121212] text-md font-medium mt-3 text-center">
+                Minutes
+              </p>
+            </div>
+            <div class="time-box3">
+              <h1 class="text-black text-5xl font-extrabold px-5">08</h1>
+              <p class="text-[#121212] text-md font-medium mt-3 text-center">
+                Seconds
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- product grid -->
+      <section class="pt-10 lg:pt-2 max-w-screen-xl m-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+          <div class="text-center p-10 mx-3 border border-gray-200 rounded-sm">
+            <img class="m-auto" src="./images/fruit6.png" alt="" />
+            <h3
+              class="mt-10 mb-6 text-center text-[#121212] text-2xl font-bold"
+            >
+              12.90$ - 18.85$
+            </h3>
+            <hr />
+            <h4 class="mt-5 text-base mb-6">Apples</h4>
+            <div class="mb-8 text-[#F85559]">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <!-- Open the modal using ID.showModal() method -->
+            <button
+              class="text-[#F85559] font-extrabold"
+              onclick="my_modal_5.showModal()"
+            >
+              Details
+            </button>
+            <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+              <form method="dialog" class="modal-box">
+                <div class="p-3 text-center">
+                  <img class="m-auto" src="./images/fruit6.png" alt="" />
+                  <h3 class="text-4xl my-6 font-extrabold text-[#121212]">
+                    Apples
+                  </h3>
+                  <p class="text-base mt">
+                    Professional employees are there for you to pick the most
+                    amazing and fresh fruits.
+                  </p>
+                  <div class="mt-8 text-[#F85559]">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                </div>
+                <div class="modal-action justify-center">
+                  <!-- if there is a button in form, it will close the modal -->
+                  <button
+                    class="btn bg-transparent border-[#F85559] text-[#F85559] hover:bg-[#F85559] hover:text-white"
+                  >
+                    Close
+                  </button>
+                  <button
+                    class="btn bg-[#F85559] text-white hover:text-[#F85559] hover:bg-transparent hover:border-[#F85559]"
+                  >
+                    Buy Now
+                  </button>
+                </div>
+              </form>
+            </dialog>
+          </div>
+          <div class="text-center p-10 mx-3 border border-gray-200 rounded-sm">
+            <img class="m-auto" src="./images/fruit7.png" alt="" />
+            <h3
+              class="mt-10 mb-6 text-center text-[#121212] text-2xl font-bold"
+            >
+              12.90$ - 18.85$
+            </h3>
+            <hr />
+            <h4 class="mt-5 text-base mb-6">Orange</h4>
+            <div class="mb-8 text-[#F85559]">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <!-- Open the modal using ID.showModal() method -->
+            <button
+              class="text-[#F85559] font-extrabold"
+              onclick="my_modal_5.showModal()"
+            >
+              Details
+            </button>
+            <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+              <form method="dialog" class="modal-box">
+                <div class="p-3 text-center">
+                  <img class="m-auto" src="./images/fruit.png" alt="" />
+                  <h3 class="text-4xl my-6 font-extrabold text-[#121212]">
+                    Orange
+                  </h3>
+                  <p class="text-base mt">
+                    Professional employees are there for you to pick the most
+                    amazing and fresh fruits.
+                  </p>
+                  <div class="mt-8 text-[#F85559]">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                </div>
+                <div class="modal-action justify-center">
+                  <!-- if there is a button in form, it will close the modal -->
+                  <button
+                    class="btn bg-transparent border-[#F85559] text-[#F85559] hover:bg-[#F85559] hover:text-white"
+                  >
+                    Close
+                  </button>
+                  <button
+                    class="btn bg-[#F85559] text-white hover:text-[#F85559] hover:bg-transparent hover:border-[#F85559]"
+                  >
+                    Buy Now
+                  </button>
+                </div>
+              </form>
+            </dialog>
+          </div>
+          <div class="text-center p-10 mx-3 border border-gray-200 rounded-sm">
+            <img class="m-auto" src="./images/fruit8.png" alt="" />
+            <h3
+              class="mt-10 mb-6 text-center text-[#121212] text-2xl font-bold"
+            >
+              12.90$ - 18.85$
+            </h3>
+            <hr />
+            <h4 class="mt-5 text-base mb-6">Red Dragon</h4>
+            <div class="mb-8 text-[#F85559]">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <!-- Open the modal using ID.showModal() method -->
+            <button
+              class="text-[#F85559] font-extrabold"
+              onclick="my_modal_5.showModal()"
+            >
+              Details
+            </button>
+            <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+              <form method="dialog" class="modal-box">
+                <div class="p-3 text-center">
+                  <img class="m-auto" src="./images/fruit8.png" alt="" />
+                  <h3 class="text-4xl my-6 font-extrabold text-[#121212]">
+                    Red Dragon
+                  </h3>
+                  <p class="text-base mt">
+                    Professional employees are there for you to pick the most
+                    amazing and fresh fruits.
+                  </p>
+                  <div class="mt-8 text-[#F85559]">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                </div>
+                <div class="modal-action justify-center">
+                  <!-- if there is a button in form, it will close the modal -->
+                  <button
+                    class="btn bg-transparent border-[#F85559] text-[#F85559] hover:bg-[#F85559] hover:text-white"
+                  >
+                    Close
+                  </button>
+                  <button
+                    class="btn bg-[#F85559] text-white hover:text-[#F85559] hover:bg-transparent hover:border-[#F85559]"
+                  >
+                    Buy Now
+                  </button>
+                </div>
+              </form>
+            </dialog>
+          </div>
+          <div class="text-center p-10 mx-3 border border-gray-200 rounded-sm">
+            <img class="m-auto" src="./images/fruit9.png" alt="" />
+            <h3
+              class="mt-10 mb-6 text-center text-[#121212] text-2xl font-bold"
+            >
+              12.90$ - 18.85$
+            </h3>
+            <hr />
+            <h4 class="mt-5 text-base mb-6">Banana</h4>
+            <div class="mb-8 text-[#F85559]">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <!-- Open the modal using ID.showModal() method -->
+            <button
+              class="text-[#F85559] font-extrabold"
+              onclick="my_modal_5.showModal()"
+            >
+              Details
+            </button>
+            <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+              <form method="dialog" class="modal-box">
+                <div class="p-3 text-center">
+                  <img class="m-auto" src="./images/fruit9.png" alt="" />
+                  <h3 class="text-4xl my-6 font-extrabold text-[#121212]">
+                    Banana
+                  </h3>
+                  <p class="text-base mt">
+                    Professional employees are there for you to pick the most
+                    amazing and fresh fruits.
+                  </p>
+                  <div class="mt-8 text-[#F85559]">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                </div>
+                <div class="modal-action justify-center">
+                  <!-- if there is a button in form, it will close the modal -->
+                  <button
+                    class="btn bg-transparent border-[#F85559] text-[#F85559] hover:bg-[#F85559] hover:text-white"
+                  >
+                    Close
+                  </button>
+                  <button
+                    class="btn bg-[#F85559] text-white hover:text-[#F85559] hover:bg-transparent hover:border-[#F85559]"
+                  >
+                    Buy Now
+                  </button>
+                </div>
+              </form>
+            </dialog>
           </div>
         </div>
       </section>

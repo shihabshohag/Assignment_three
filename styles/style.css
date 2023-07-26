@@ -26,6 +26,52 @@ img {
   z-index: 9;
 }
 
+.time-box h1 {
+  position: relative;
+}
+
+.time-box h1:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 1px;
+  height: 10px;
+  border-right: 2px dotted #121212;
+  margin: auto;
+}
+.time-box1 h1 {
+  position: relative;
+}
+
+.time-box1 h1:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 1px;
+  height: 10px;
+  border-right: 2px dotted #121212;
+  margin: auto;
+}
+.time-box2 h1 {
+  position: relative;
+}
+
+.time-box2 h1:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 1px;
+  height: 10px;
+  border-right: 2px dotted #121212;
+  margin: auto;
+}
+
 /* .carousel-item img {
   position: relative;
 }

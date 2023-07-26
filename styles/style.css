@@ -71,6 +71,12 @@ img {
   border-right: 2px dotted #121212;
   margin: auto;
 }
+.team {
+  background-image: url(../images/banner1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 /* .carousel-item img {
   position: relative;

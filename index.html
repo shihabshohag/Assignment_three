@@ -32,6 +32,18 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <link rel="stylesheet" href="./styles/style.css" />
+
+    <!-- <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            backgroundImage: {
+              "hero-pattern": "url('./images/banner1.png')",
+            },
+          },
+        },
+      };
+    </script> -->
   </head>
   <body>
     <!-- header start -->
@@ -435,7 +447,9 @@
       <section class="py-10 lg:pt-2 lg:pb-28 max-w-screen-xl m-auto">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
           <!-- grid one -->
-          <div class="text-center p-10 mx-3 border border-gray-200 rounded-sm">
+          <div
+            class="text-center p-10 mx-5 lg:mx-3 mb-5 lg:mb-0 border border-gray-200 rounded-sm hover:shadow-lg"
+          >
             <img class="m-auto" src="./images/fruit6.png" alt="" />
             <h3
               class="mt-10 mb-6 text-center text-[#121212] text-2xl font-bold"
@@ -493,7 +507,9 @@
             </dialog>
           </div>
           <!-- grid Two -->
-          <div class="text-center p-10 mx-3 border border-gray-200 rounded-sm">
+          <div
+            class="text-center p-10 mx-5 lg:mx-3 mb-5 lg:mb-0 border border-gray-200 rounded-sm hover:shadow-lg"
+          >
             <img class="m-auto" src="./images/fruit7.png" alt="" />
             <h3
               class="mt-10 mb-6 text-center text-[#121212] text-2xl font-bold"
@@ -551,7 +567,9 @@
             </dialog>
           </div>
           <!-- grid Three -->
-          <div class="text-center p-10 mx-3 border border-gray-200 rounded-sm">
+          <div
+            class="text-center p-10 mx-5 lg:mx-3 mb-5 lg:mb-0 border border-gray-200 rounded-sm hover:shadow-lg"
+          >
             <img class="m-auto" src="./images/fruit8.png" alt="" />
             <h3
               class="mt-10 mb-6 text-center text-[#121212] text-2xl font-bold"
@@ -609,7 +627,9 @@
             </dialog>
           </div>
           <!-- grid four -->
-          <div class="text-center p-10 mx-3 border border-gray-200 rounded-sm">
+          <div
+            class="text-center p-10 mx-5 lg:mx-3 mb-5 lg:mb-0 border border-gray-200 rounded-sm hover:shadow-lg"
+          >
             <img class="m-auto" src="./images/fruit9.png" alt="" />
             <h3
               class="mt-10 mb-6 text-center text-[#121212] text-2xl font-bold"
@@ -666,6 +686,27 @@
               </form>
             </dialog>
           </div>
+        </div>
+        <div class="m-auto text-center mt-16">
+          <button
+            class="btn bg-[#F85559] text-white hover:bg-transparent hover:border-[#F85559] hover:text-[#F85559]"
+          >
+            Shop All
+          </button>
+        </div>
+      </section>
+
+      <!-- team secton -->
+
+      <section class="py-10 lg:py-28 max-w-screen-xl m-auto team hero-pattern">
+        <!-- team header section -->
+        <div class="text-center">
+          <h1>Meet the team section</h1>
+          <p>
+            Contrary to popular belief, is not simply random text. It has roots
+            in a piece of classical Latin literature from 45 BC, making it over
+            2000 years old.
+          </p>
         </div>
       </section>
     </main>

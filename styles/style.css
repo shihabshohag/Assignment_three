@@ -137,9 +137,29 @@ i {
   .desttop-nav {
     display: none;
   }
+  .why2 h3::before {
+    right: 0;
+    left: 0;
+    margin: auto;
+  }
+  .why1 h3::before {
+    right: 0;
+    left: 0;
+    margin: auto;
+  }
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 767px) {
   .banner-slider {
     height: 300px !important;
+  }
+  .why2 h3::before {
+    right: 0;
+    left: 0;
+    margin: auto;
+  }
+  .why1 h3::before {
+    right: 0;
+    left: 0;
+    margin: auto;
   }
 }

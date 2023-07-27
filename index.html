@@ -38,7 +38,7 @@
         theme: {
           extend: {
             backgroundImage: {
-              "hero-pattern": "url('./images/banner1.png')",
+              "hero-pattern": "url('../images/banner1.png')",
             },
           },
         },
@@ -49,166 +49,82 @@
     <!-- header start -->
     <header>
       <!-- navbar start -->
-      <!-- nav for large devise -->
-      <nav
-        x-data="{ isOpen: false }"
-        class="relative bg-white shadow dark:bg-[#F85559] max-w-screen-xl mx-auto rounded-full my-9 desttop-nav"
+
+      <div
+        class="navbar bg-base-100 flex justify-between bg-white lg:bg-[#F85559] max-w-screen-xl mx-auto lg:rounded-full lg:my-9"
       >
-        <div class="px-6 py-3 mx-auto md:flex">
-          <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
-          <div
-            x-cloak
-            :class="[isOpen ? 'translate-x-0 opacity-100 ' : 'opacity-0 -translate-x-full']"
-            class="absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out md:mt-0 md:p-0 md:top-0 md:relative md:opacity-100 md:translate-x-0 md:flex md:items-center md:justify-between lg:justify-between"
+        <div class="hidden lg:flex">
+          <ul
+            class="menu menu-horizontal px-1 text-white text-lg hover:text-white"
           >
-            <div class="flex flex-col px-2 md:flex-row md:py-0">
-              <a
-                href="#"
-                class="px-2.5 py-4 text-gray-700 transition-colors duration-300 transform rounded-lg dark:text-gray-200 md:mx-2"
-                >Home</a
+            <li><a>Home</a></li>
+            <li><a>About Us</a></li>
+            <li><a>Shop</a></li>
+            <li><a>All Fruits</a></li>
+          </ul>
+        </div>
+        <div class="nav-main flex justify-between">
+          <div class="flex items-center">
+            <img src="./images/logo.png" alt="" />
+            <h3 class="text-[#121212] lg:text-white ml-2 text-4xl font-bold">
+              Fruit Burst
+            </h3>
+          </div>
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
               >
-              <a
-                href="#"
-                class="px-2.5 py-4 text-gray-700 transition-colors duration-300 transform rounded-lg dark:text-gray-200 md:mx-2"
-                >About Us</a
-              >
-              <a
-                href="#"
-                class="px-2.5 py-4 text-gray-700 transition-colors duration-300 transform rounded-lg dark:text-gray-200 md:mx-2"
-                >Shop</a
-              >
-              <a
-                href="#"
-                class="px-2.5 py-4 text-gray-700 transition-colors duration-300 transform rounded-lg dark:text-gray-200 md:mx-2"
-                >All Fruits</a
-              >
-            </div>
-
-            <!-- logo -->
-            <div class="flex items-center justify-between">
-              <a href="#">
-                <img
-                  class="w-10 mr-2 sm:h-7 logo-img"
-                  src="./images/logo.png"
-                  alt=""
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
                 />
-              </a>
-              <a href="#"><h3 class="text-white text-3xl">Fruit Burst</h3></a>
+              </svg>
+            </label>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content -ml-44 mt-3 z-[999] p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li><a>Home</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
+            </ul>
+          </div>
+          <!-- <a class="btn btn-ghost normal-case text-xl">daisyUI</a> -->
+        </div>
+        <div class="">
+          <!-- search bar start here -->
+          <div
+            class="relative mr-2 mt-4 md:mt-0 flex justify-between hidden lg:block"
+          >
+            <input
+              type="text"
+              class="w-96 py-2 px-4 text-gray-700 bg-white border rounded-full dark:text-gray-300 focus:border-blue-400 dark:focus:border-blue-300 focus:outline-none"
+              placeholder="Search here"
+            />
 
-              <!-- Mobile menu button -->
-              <div class="flex lg:hidden">
-                <button
-                  x-cloak
-                  @click="isOpen = !isOpen"
-                  type="button"
-                  class="text-gray-500 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400"
-                  aria-label="toggle menu"
-                >
-                  <svg
-                    x-show="!isOpen"
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="w-6 h-6"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M4 8h16M4 16h16"
-                    />
-                  </svg>
-
-                  <svg
-                    x-show="isOpen"
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="w-6 h-6"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M6 18L18 6M6 6l12 12"
-                    />
-                  </svg>
-                </button>
-              </div>
-            </div>
-
-            <div class="relative mt-4 md:mt-0 flex justify-between">
-              <input
-                type="text"
-                class="w-96 py-2 px-4 text-gray-700 bg-white border rounded-full dark:text-gray-300 focus:border-blue-400 dark:focus:border-blue-300 focus:outline-none"
-                placeholder="Search here"
-              />
-
-              <!-- search icon -->
-              <span class="absolute inset-y-0 right-0 flex items-center pr-3">
-                <svg class="w-5 h-5 text-black" viewBox="0 0 24 24" fill="none">
-                  <path
-                    d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                </svg>
-              </span>
-            </div>
+            <!-- search icon -->
+            <span class="absolute inset-y-0 right-0 flex items-center pr-3">
+              <svg class="w-5 h-5 text-black" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+            </span>
           </div>
         </div>
-      </nav>
-      <!-- nav for tab and mobile devise -->
-      <nav
-        x-data="{ isOpen: false }"
-        class="relative shadow bg-white lg:hidden"
-      >
-        <div class="container px-6 py-4 mx-auto">
-          <div class="lg:flex lg:items-center lg:justify-between">
-            <div class="flex items-center justify-between">
-              <a href="#" class="flex items-center">
-                <img
-                  class="w-10 mr-2 sm:h-7 logo-img"
-                  src="./images/logo.png"
-                  alt=""
-                />
-                <h3 class="text-black text-3xl">Fruit Burst</h3>
-              </a>
-
-              <!-- Mobile menu button -->
-              <div class="flex lg:hidden">
-                <button
-                  x-cloak
-                  @click="isOpen = !isOpen"
-                  type="button"
-                  class="text-black dark:text-black hover:text-black dark:hover:text-gray-400 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400"
-                  aria-label="toggle menu"
-                >
-                  <svg
-                    x-show="!isOpen"
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="w-6 h-6"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M4 8h16M4 16h16"
-                    />
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </nav>
+      </div>
 
       <!-- bannner section start -->
       <section class="banner max-w-screen-xl mx-auto">
@@ -824,7 +740,7 @@
         </div>
         <!-- why choose us content -->
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-12">
-          <div class="block lg:hidden px-5 lg:px-0 pb-6 lg:pb-0">
+          <div class="block lg:hidden px-5 lg:px-0 pb-6 lg:pb-0 mx-auto">
             <img src="./images/whychoose1.png" alt="" />
           </div>
           <div class="px-20 lg:px-0">
@@ -890,7 +806,7 @@
             </div>
           </div>
           <div class="hidden lg:block">
-            <img src="./images/whychoose1.png" alt="" />
+            <img class="mx-auto" src="./images/whychoose1.png" alt="" />
           </div>
           <div class="px-20 lg:px-0">
             <div

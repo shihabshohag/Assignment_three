@@ -84,7 +84,7 @@ i {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.493);
+  box-shadow: inset 0 0 0 2000px #121212b3;
 }
 .team-member {
   width: 80%;
